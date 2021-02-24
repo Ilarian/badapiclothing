@@ -21,8 +21,7 @@ export class DataviewComponent implements OnInit {
   }
 
   getData(): void {
-      this.products = GLOVES;
-    /*this.dataService.getProducts("gloves")
-        .subscribe(products => this.products = products);*/
+    this.dataService.getProducts("gloves")
+        .subscribe(products => this.products = products);
   }
 }
